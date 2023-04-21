@@ -1,0 +1,23 @@
+.Loading{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 799px){
+    .Loading{
+        width: 50%;
+        margin: auto;
+    }
+
+    .Carregar{
+        font-size: 15px;
+        
+    }
+
+    .imgLoading{
+        max-width: 220px; 
+    }
+
+}

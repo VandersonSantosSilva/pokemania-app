@@ -1,0 +1,67 @@
+:root{
+    --color5: #2b6eb6;
+}
+
+.div_search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.div_container{
+    position: relative;
+}
+
+input{
+    border-radius: 10px;
+    border: solid 0.5px  var(--color5);
+    padding: 8px;
+    padding-left: 50px;
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+}
+
+label{
+    position: absolute;
+    font-size: 30px;
+    color: var(--color5);
+    left: 15px;
+    top: 5px;
+}
+
+input:focus{
+    color: var(--color5);
+}
+
+.container_img{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.img{
+    max-width: 500px;
+}
+
+
+@media screen and (max-width: 999px){
+    .img{
+        max-width: 250px;
+
+    }
+
+    input{
+        width: 250px;
+        font-size: 10px;
+    }
+
+
+    label{
+        position: absolute;
+        font-size: 20px;
+        color: var(--color5);
+        left: 15px;
+        top: 5px;
+    }
+}
