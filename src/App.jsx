@@ -12,8 +12,8 @@ function App() {
   return (
     <Provider store={store}>
       <Routes>
-        <Route path={`/pokemon/:id`} element={<InformationsPokemons />} />
         <Route exact path="/" element={[<PokemonsList />, <Search />]} />
+        <Route path={`/pokemon/:id`} element={<InformationsPokemons />} />
       </Routes>
     </Provider>
   );
