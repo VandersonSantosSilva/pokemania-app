@@ -11,13 +11,10 @@ const store =  legacy_createStore(PokemonsReducers);
 function App() {
   return (
     <Provider store={store}>
-         <Search />
         <Routes>
           <Route path={`/pokemon/:id`} element={<InformationsPokemons />} />
-          <Route exact path="/" element={<PokemonsList />} />
+          <Route exact path="/" element={<PokemonsList />}, <Search />/>
         </Routes>
-       
-      
     </Provider>
   );
 }
